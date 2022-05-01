@@ -34,7 +34,7 @@
 
 static const IMAGE_NT_HEADERS32*        PE_nt_headers;
 
-static const char builtin_signature[] = "Wine builtin DLL";
+static const char builtin_signature[] = "Wine native DLL";
 static const char fakedll_signature[] = "Wine placeholder DLL";
 static int is_builtin;
 
@@ -99,7 +99,7 @@ void print_fake_dll( void )
     if (dos && dos->e_lfanew >= sizeof(*dos) + 32)
     {
         if (!memcmp( dos + 1, builtin_signature, sizeof(builtin_signature) ))
-            printf( "*** This is a Wine builtin DLL ***\n\n" );
+            printf( "*** This is a Wine native DLL ***\n\n" );
         else if (!memcmp( dos + 1, fakedll_signature, sizeof(fakedll_signature) ))
             printf( "*** This is a Wine fake DLL ***\n\n" );
     }

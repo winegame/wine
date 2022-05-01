@@ -662,7 +662,7 @@ static int load_clr_header( IMAGE_COR20_HEADER *hdr, size_t va, size_t size, int
 /* retrieve the mapping parameters for an executable (PE) image */
 static unsigned int get_image_params( struct mapping *mapping, file_pos_t file_size, int unix_fd )
 {
-    static const char builtin_signature[] = "Wine builtin DLL";
+    static const char builtin_signature[] = "Wine native DLL";
     static const char fakedll_signature[] = "Wine placeholder DLL";
 
     IMAGE_COR20_HEADER clr;

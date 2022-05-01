@@ -57,7 +57,7 @@ static const WCHAR pe_dir[] = L"";
 static const char current_arch[] = "none";
 #endif
 
-static const char builtin_signature[] = "Wine builtin DLL";
+static const char builtin_signature[] = "Wine native DLL";
 static const char fakedll_signature[] = "Wine placeholder DLL";
 
 static const unsigned int file_alignment = 512;

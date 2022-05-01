@@ -855,7 +855,7 @@ void start_server( BOOL debug )
  */
 static NTSTATUS map_so_dll( const IMAGE_NT_HEADERS *nt_descr, HMODULE module )
 {
-    static const char builtin_signature[32] = "Wine builtin DLL";
+    static const char builtin_signature[32] = "Wine native DLL";
     IMAGE_DATA_DIRECTORY *dir;
     IMAGE_DOS_HEADER *dos;
     IMAGE_NT_HEADERS *nt;

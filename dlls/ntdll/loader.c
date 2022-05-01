@@ -2083,7 +2083,7 @@ static NTSTATUS build_module( LPCWSTR load_path, const UNICODE_STRING *nt_name, 
                               const SECTION_IMAGE_INFORMATION *image_info, const struct file_id *id,
                               DWORD flags, BOOL system, WINE_MODREF **pwm )
 {
-    static const char builtin_signature[] = "Wine builtin DLL";
+    static const char builtin_signature[] = "Wine native DLL";
     char *signature = (char *)((IMAGE_DOS_HEADER *)*module + 1);
     BOOL is_builtin;
     IMAGE_NT_HEADERS *nt;

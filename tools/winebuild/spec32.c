@@ -47,7 +47,7 @@
 
 int needs_get_pc_thunk = 0;
 
-static const char builtin_signature[32] = "Wine builtin DLL";
+static const char builtin_signature[32] = "Wine native DLL";
 static const char fakedll_signature[32] = "Wine placeholder DLL";
 static struct strarray spec_extra_ld_symbols = { 0 }; /* list of extra symbols that ld should resolve */
 

@@ -39,7 +39,7 @@ struct pe_module_info
     struct image_file_map       fmap;
 };
 
-static const char builtin_signature[] = "Wine builtin DLL";
+static const char builtin_signature[] = "Wine native DLL";
 
 static void* pe_map_full(struct image_file_map* fmap, IMAGE_NT_HEADERS** nth)
 {

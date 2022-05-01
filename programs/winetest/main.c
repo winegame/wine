@@ -295,7 +295,7 @@ static int running_elevated (void)
 /* check for native dll when running under wine */
 static BOOL is_native_dll( HMODULE module )
 {
-    static const char builtin_signature[] = "Wine builtin DLL";
+    static const char builtin_signature[] = "Wine native DLL";
     static const char fakedll_signature[] = "Wine placeholder DLL";
     const IMAGE_DOS_HEADER *dos;
 
