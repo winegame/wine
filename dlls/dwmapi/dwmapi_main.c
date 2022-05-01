@@ -44,12 +44,7 @@ HRESULT WINAPI DwmIsCompositionEnabled(BOOL *enabled)
     if (!enabled)
         return E_INVALIDARG;
 
-    version.dwOSVersionInfoSize = sizeof(OSVERSIONINFOW);
-
-    if (!GetVersionExW(&version))
-        *enabled = FALSE;
-    else
-        *enabled = (version.dwMajorVersion > 6 || (version.dwMajorVersion == 6 && version.dwMinorVersion >= 3));
+    *enabled = TRUE;
 
     return S_OK;
 }
