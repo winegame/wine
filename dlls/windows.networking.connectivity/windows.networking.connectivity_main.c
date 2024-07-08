@@ -91,14 +91,14 @@ static HRESULT STDMETHODCALLTYPE vector_view_GetTrustLevel(IVectorView_Connectio
     return E_NOTIMPL;
 }
 
-static HRESULT STDMETHODCALLTYPE vector_view_GetAt(IVectorView_ConnectionProfile *iface, ULONG index, IConnectionProfile **out_value)
+static HRESULT STDMETHODCALLTYPE vector_view_GetAt(IVectorView_ConnectionProfile *iface, UINT32 index, IConnectionProfile **out_value)
 {
     FIXME("iface %p, index %#x, out_value %p stub!\n", iface, index, out_value);
     return S_OK;
 }
 
 static HRESULT STDMETHODCALLTYPE vector_view_get_Size(
-    IVectorView_ConnectionProfile *iface, ULONG *out_value)
+    IVectorView_ConnectionProfile *iface, UINT32 *out_value)
 {
     FIXME("iface %p, out_value %p stub!\n", iface, out_value);
     *out_value = 0;
@@ -106,7 +106,7 @@ static HRESULT STDMETHODCALLTYPE vector_view_get_Size(
 }
 
 static HRESULT STDMETHODCALLTYPE vector_view_IndexOf(
-    IVectorView_ConnectionProfile *iface, IConnectionProfile *value, ULONG *index, BOOLEAN *out_value)
+    IVectorView_ConnectionProfile *iface, IConnectionProfile *value, UINT32 *index, BOOLEAN *out_value)
 {
     FIXME("iface %p, value %p, index %p, out_value %p stub!\n", iface, value, index, out_value);
     *out_value = FALSE;
